@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,14 +38,28 @@ body {
 }
 
 #calculate-btn {
-    padding: 0.5rem 1rem;
+    padding: 0;
+    width: 60px; /* Adjust the width to desired button size */
+    height: 60px; /* Make height equal to width */
     border: none;
     background-color: #6200ee;
     color: white;
-    border-radius: 4px;
+    border-radius: 50%; /* Makes the button round */
     cursor: pointer;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 0.5rem;
+    margin-left: auto; /* Centers the button horizontally */
+    margin-right: auto; /* Centers the button horizontally */
+}
+
+#calculate-btn svg {
+    width: 30px;
+    height: 30px;
+    fill: none;
+    stroke: #FFF;
+    stroke-width: 2;
 }
 
 #calculate-btn:hover {
