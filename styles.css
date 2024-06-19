@@ -5,14 +5,18 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-color: #f8f8f8;
+    padding: 1rem;
 }
 
 .container {
     text-align: center;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
 }
 
 .input-section {
@@ -25,9 +29,10 @@ body {
 }
 
 .input-section input {
-    width: 80px;
+    width: calc(100% / 3 - 1rem);
     padding: 0.5rem;
     margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
@@ -39,6 +44,8 @@ body {
     color: white;
     border-radius: 4px;
     cursor: pointer;
+    width: 100%;
+    margin-top: 0.5rem;
 }
 
 #calculate-btn:hover {
@@ -52,4 +59,11 @@ body {
 .error-message {
     color: red;
     margin-top: 1rem;
+}
+
+@media (min-width: 600px) {
+    .input-section input {
+        width: calc(33.33% - 1rem);
+        margin-bottom: 0;
+    }
 }
