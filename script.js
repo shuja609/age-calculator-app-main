@@ -66,3 +66,12 @@ function calculateAge() {
         animateValue('days', 0, ageDays, 2000);
     }
 }
+
+
+
+
+// script.js
+
+document.getElementById('theme-checkbox').addEventListener('change', function() {
+    document.body.classList.toggle('dark');
+});
